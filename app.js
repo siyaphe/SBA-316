@@ -43,6 +43,32 @@ function getRandomColor() {
 
 
 // 3) Use the parent-child-sibling relationship to navigate between elements at least once (firstChild, lastChild, parentNode, nextElementSibling, etc.).
+const button = document.getElementById('buttonElement');
+const input = document.getElementById('inputElement');
+const ul = document.getElementById('ulElement');
+
+console.log(button);
+console.log(input);
+console.log(ul);
+
+button.addEventListener('click', (event) => {
+  const li = document.createElement('li');
+  li.textContent = input.value;
+  ul.appendChild(li)
+  input.value = "";
+  console.log(`The number of children: ${ul.children.length}`)
+})
+
+input.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter'){
+    const li = document.createElement('li');
+    li.textContent = input.value;
+    ul.appendChild(li)
+    input.value = "";
+    console.log(`The number of children: ${ul.children.length}`)
+  }
+})
+
 
 
 // 4) Iterate over a collection of elements to accomplish some task.
