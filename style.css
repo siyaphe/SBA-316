@@ -112,5 +112,32 @@ header {
     }
 
  }
+
+ /* container------------------- */
+ .sebContainer {
+    border: solid black;
+    padding: 5px;
+    border-width: .2px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+
+ }
+.sebContainer h5 {
+    border: solid #11101b;
+    background: aliceblue;
+    border-width: 0.1px;
+    padding:5px;
+    border-radius: 50px;
+    
+}
+.sebContainer button {
+    border-radius: 50px;
+    padding: 5px;
+    background: aliceblue;
+    color:#11101b
+}
+
  
  

@@ -7,6 +7,35 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// 1) Cache at least one element using selectElementById.
+
+toggleButton.addEventListener('click', () => {
+    message.style.display = (message.style.display === 'none') ? 'block' : 'none';
+});
+
+const alertButton = document.getElementById('alertButton');
+
+alertButton.addEventListener('click', () => {
+    alert('Welcome, Enter your Email.');
+});
+
+// random color for user------------
+document.addEventListener('click', () => {
+    document.body.style.backgroundColor = getRandomColor();
+});
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+    
+}
+
+
+
 // 2)  Cache at least one element using querySelector or querySelectorAll.
 
 
