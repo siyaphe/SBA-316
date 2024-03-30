@@ -136,8 +136,10 @@ header {
     border-radius: 50px;
     padding: 5px;
     background: aliceblue;
-    color:#11101b
+    color:#11101b;
+    font-weight: bold;
 }
+
 
  
  

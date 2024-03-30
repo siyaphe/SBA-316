@@ -9,14 +9,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // 1) Cache at least one element using selectElementById.
 
-toggleButton.addEventListener('click', () => {
-    message.style.display = (message.style.display === 'none') ? 'block' : 'none';
-});
+const form = document.getElementById('myForm');
+const emailInput = document.getElementById('email');
 
-const alertButton = document.getElementById('alertButton');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!emailInput.checkValidity()) {
+        alert('Please enter a valid email address.');
+    } else {
 
-alertButton.addEventListener('click', () => {
-    alert('Welcome, Enter your Email.');
+        // Form submission
+        alert(' Submitted Successfully. Thank you for contacting us!');
+    }
 });
 
 // random color for user------------
@@ -33,7 +37,6 @@ function getRandomColor() {
     return color;
     
 }
-
 
 
 // 2)  Cache at least one element using querySelector or querySelectorAll.
