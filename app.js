@@ -74,12 +74,17 @@ input.addEventListener('keydown', (event) => {
 })
 
 
-
-
-
-
 // 8) Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
 
+// Get the button element
+const buttons = document.getElementById('changeButton');
+const contentDiv = document.getElementById('topic');
+
+// Add click event listener
+buttons.addEventListener('click', () => {
+    // Modify the HTML content
+    contentDiv.innerHTML = '<p>New Topic after click.</p>';
+});
 
 
 // 9) Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
