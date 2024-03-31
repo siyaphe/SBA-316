@@ -150,7 +150,7 @@ header {
     border: solid #11101b;
     background: aliceblue;
     border-width: 0.1px;
-    padding:5px;
+    padding: 5px;
     border-radius: 50px;
     
 }
@@ -179,5 +179,30 @@ header {
     margin: 20px;
     padding: 20px;
     height: 42vh;
+ }
+
+ .tempContainer {
+    border: solid green;
+    height: 25vh;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+ }
+.dataContainer {
+    border: solid green;
+    height: 50vh;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+ .dataContainer,h2 { 
+    margin: 20px;
+    display: block;
+    padding: 5px;
+   
+
+ }
+ .tempContainer, .dataContainer  {
+    align-items: center;
  }
  
