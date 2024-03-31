@@ -76,13 +76,12 @@ input.addEventListener('keydown', (event) => {
 
 // 8) Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent.
 
-// Get the button element
+
 const buttons = document.getElementById('changeButton');
 const contentDiv = document.getElementById('topic');
 
-// Add click event listener
 buttons.addEventListener('click', () => {
-    // Modify the HTML content
+ 
     contentDiv.innerHTML = '<p>New Topic after click.</p>';
 });
 
@@ -92,9 +91,32 @@ buttons.addEventListener('click', () => {
 
 // 10) Modify at least one attribute of an element in response to user interaction.
 
+const changeButton = document.getElementById('styleButton');
+const element = document.getElementById('element');
+
+
+changeButton.addEventListener('click', () => {
+   
+    element.style.backgroundColor = 'lightblue';
+    element.style.fontWeight = 'normal';
+
+   
+    element.classList.add('highlighted');
+    element.classList.remove('default');
+});
+
 
 // 11) Register at least two different event listeners and create the associated event handler functions.
 
+
+const btn= document.getElementById('changeButton');
+const image = document.getElementById('image');
+
+button.addEventListener('click', () => {
+    
+    image.setAttribute('src', 'Original Image');
+    image.setAttribute('alt', 'Modified Image');
+});
 
 // 12) Use at least two Browser Object Model (BOM) properties or methods.
 

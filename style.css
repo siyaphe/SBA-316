@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: "Google sans Regular";
     box-sizing: border-box;
+    
 }
 
 body {
@@ -23,7 +24,7 @@ header {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 15px;
     font-weight: bold;
     color: aliceblue;
 }
@@ -39,7 +40,7 @@ header {
 .nav-bar ul li a {
     display: block;
     color:aliceblue;
-    font-size: 20px;
+    font-size: 10px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
@@ -56,7 +57,7 @@ header {
     background: aliceblue;
 }
 
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1380px) {
    header {
     padding: 0  50px;
    } 
@@ -94,19 +95,19 @@ header {
        cursor: pointer;
     } 
     .hamburger .line {
-        width: 30px;
-        height: 3px;
+        width: 15px;
+        height: 2px;
         background: aliceblue;
         margin: 6px 0;
     }
     .nav-bar {
         height: 0;
         position: absolute;
-        top: 80px;
+        top: 15px;
         left: 0;
         right: 0;
-        width: 100vw;
-        background: #11101b;
+        width: 100vw;    
+        background: rgb(26, 26, 29);
         transition: 0.5s;
         overflow: hidden;
     }
@@ -131,13 +132,21 @@ header {
         color:red;
     }
 
-    
+    .sebContainer h5 {
+        border: solid rgb(26, 26, 29);
+        background: aliceblue;
+        border-width: 0.1px;
+        padding: 5px;
+        border-radius: 10px;
+        display: none;
+        
+    }
 
  }
 
  /* container------------------- */
  .sebContainer {
-    border: solid black;
+    border: solid rgb(26, 26, 29);
     padding: 20px;
     border-width: .2px;
     display: flex;
@@ -147,15 +156,15 @@ header {
 
  }
 .sebContainer h5 {
-    border: solid #11101b;
+    border: solid rgb(26, 26, 29);
     background: aliceblue;
     border-width: 0.1px;
     padding: 5px;
-    border-radius: 50px;
+    border-radius: 10px;
     
 }
 .sebContainer button {
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 5px;
     background: aliceblue;
     color:#11101b;
@@ -163,7 +172,7 @@ header {
 }
 
 .imageContainer img{
-    border: solid green;
+    border: solid rgb(26, 26, 29);
     width: 100%;
     height: 580px;
     padding: 20px;
@@ -174,7 +183,7 @@ header {
 }
 
  .cacheContainer {
-    border: solid red;
+    border: solid rgb(26, 26, 29);
     width:100%;
     margin: 20px;
     padding: 20px;
@@ -182,27 +191,43 @@ header {
  }
 
  .tempContainer {
-    border: solid green;
-    height: 25vh;
+    border: solid rgb(26, 26, 29);
+    height: 45vh;
     width: 100%;
     margin: 20px;
     padding: 20px;
  }
 .dataContainer {
-    border: solid green;
-    height: 50vh;
+    border: solid rgb(26, 26, 29);
+    height: 130vh;
     width: 100%;
     margin: 20px;
     padding: 20px;
 }
- .dataContainer,h2 { 
+ .dataContainer,h4 { 
     margin: 20px;
     display: block;
     padding: 5px;
-   
+ }
+ .tempContainer, .dataContainer,h2 {
+    /* align-items: center; */
+    margin: 20px;
+ } 
 
- }
- .tempContainer, .dataContainer  {
-    align-items: center;
- }
- 
+ .highlighted {
+    background-color: rgb(26, 26, 29);
+    font-weight: bold;
+}
+
+.modContainer {
+    border: solid rgb(26, 26, 29);
+    margin:20px;
+    padding: 20px;
+    width: 100%;
+}
+
+#image1, #image2{
+    width: 100%;
+    padding: 20px;
+    display: block;
+}
